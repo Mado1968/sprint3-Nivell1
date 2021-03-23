@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Exercici 6 Sprint3</title>
+    <h2>Exercici 6 Sprint3</h2>
+    <h3> Reemplaça la paraula blau per la paraula verd del següent text "Tinc un cotxe de color blau. "
+        </h3>
+</head>
+
+<body>
+
+    <p id="palin"></p>
+
+    <script>
+        const frase = 'Tinc un cotxe de color blau.';
+
+        const word = 'blau';
+        var paraula = 'verd';
+
+
+
+        console.log(`La paraula "${word}" ${frase.includes(word) ? 'esta' : 'no esta'} dins la frase`);
+        console.log(`La lletra "${lletra1}" ${frase.includes(lletra1) ? 'esta' : 'no esta'} dins la frase`);
+        console.log(`La paraula "${lletra2}" ${frase.includes(lletra2) ? 'esta' : 'no esta'} dins la frase`);
+        if (word != paraula) {
+
+            const word = "verd";
+            document.getElementById("palin").innerHTML = frase + word;
+        }
+        else {
+            document.getElementById("palin").innerHTML = " No s'ha canviat";
+
+        }
+
+    </script>
+</body>
+
+</html>

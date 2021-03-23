@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title> Exercici 6A Sprint3</title>
+    <h2>Exercici 6 A Sprint3</h2>
+    <h3> Reemplaça la lletra O per la lletra U del següent text "Tinc un cotxe de color blau."" Després intenta
+         </h3>
+</head>
+
+<body>
+    <p id="palin"></p>
+    <p id="palin2"></p>
+
+<script>
+var re = /u/gi;
+var str = "Tinc un cotxe de color blau.";
+var newstr = str.replace(re, "o");
+console.log(str);
+console.log(newstr);
+
+document.getElementById("palin").innerHTML = str;
+document.getElementById("palin2").innerHTML = newstr;
+</script>
+
+</body>
+
+</html>
